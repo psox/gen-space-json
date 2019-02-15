@@ -30,7 +30,7 @@ fn main() {
             hm.insert(
                 "description".into(),
                 "Site for the ".to_string()
-                    + &site.to_string().to_uppercase().replace(".", "/")
+                    + &site.to_string().to_uppercase().replace("-", "/")
                     + &" Environment".to_string(),
             );
             site.truncate(2);
